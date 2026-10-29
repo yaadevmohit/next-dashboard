@@ -2,7 +2,6 @@ import postgres from 'postgres';
 import bcryptjs from 'bcryptjs';
 import { invoices, customers, revenue, users } from '../lib/placeholder-data';
 
-export const dynamic = 'force-dynamic';
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
 
